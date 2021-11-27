@@ -1,0 +1,4 @@
+Testnests:
+- Ropsten
+- Rinkeby
+
