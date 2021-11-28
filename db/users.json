@@ -2,8 +2,87 @@
  {
   "id": 1,
   "name": "a",
-  "email": "aa",
-  "password": "$2a$10$Rrp7k735pltsUni37O8.oOVxnkUL58OQ7GMIuRTNplh0/pOj9i/8q",
-  "avatar": "1638119257195.png"
+  "surname": "",
+  "email": "aadadada",
+  "password": "$2a$10$qX5fqQaHTHq0nfHTWPE8cu.69NgV/tEIsgQcw5naB925y/fh2kyFi",
+  "avatar": "null"
+ },
+ {
+  "id": 2,
+  "name": "Marco",
+  "surname": "Mussa",
+  "email": "marcomussa567@gmail.com",
+  "password": "$2a$10$U1AVXG/Ct.QumSxfs4T.1O7iei3PSnsLClFUrY51dTDzi6d7KOory",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "unnamed.png",
+   "encoding": "7bit",
+   "mimetype": "image/png",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638123273546.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638123273546.png",
+   "size": 127887
+  }
+ },
+ {
+  "id": 3,
+  "name": [
+   "a",
+   ""
+  ],
+  "surname": [
+   "",
+   ""
+  ],
+  "email": [
+   "",
+   ""
+  ],
+  "pass": "",
+  "password": "$2a$10$rscO7XiZ3Mwy6tly4Rzh1.chzb21E8SEf0IcUqHTNI1sjn4N5zGE.",
+  "avatar": "null"
+ },
+ {
+  "id": 4,
+  "name": [
+   "a",
+   ""
+  ],
+  "surname": [
+   "",
+   ""
+  ],
+  "email": [
+   "",
+   ""
+  ],
+  "pass": "",
+  "password": "$2a$10$NLpPFJ49KeEgGKTWb0URv.OSskH31N3MHquYgzsBa.Bbb/E24qytS",
+  "avatar": "null"
+ },
+ {
+  "id": 5,
+  "name": "a",
+  "surname": "",
+  "email": "",
+  "password": "$2a$10$WiBdmZKKXFYts.8Lwb24tO0kmmUF0Io0u2NisZSdHHO872N2sC7TO",
+  "avatar": "null"
+ },
+ {
+  "id": 6,
+  "name": "asa",
+  "surname": "asas",
+  "email": "asa",
+  "password": "$2a$10$j2MFJDUb7Ouiy/R/sVqt.eeD2DYmEd4b86QNllhCPtDK5gaHOtUVa",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "Captura de Pantalla 2021-11-27 a la(s) 18.37.05.png",
+   "encoding": "7bit",
+   "mimetype": "image/png",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638124065061.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638124065061.png",
+   "size": 53911
+  }
  }
 ]

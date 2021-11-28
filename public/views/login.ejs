@@ -1,0 +1,41 @@
+<%- include('./partials/head.ejs')  %> 
+
+<body>
+
+    <section>
+        <h3>Login:</h3>
+        <form action="/login" method='POST'>
+            <div class="row g-3 container_name_surname_register">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Nombre" name="email">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="password" aria-label="Apellido" name="surname">
+                </div>
+            </div>
+            <input type="submit">  
+        </form>
+    </section>
+
+    <div>
+        <% if(typeof validaciones != 'undefined'){ %>
+            <% validaciones.forEach( (validacion) => { %>
+                <p style="color: red;">
+                <%= validacion.msg %> 
+            </p>
+            <% }) %> 
+        <% } %> 
+    </div> 
+
+</body>
+
+<%- include('./partials/footer.ejs')  %> 
+
+<style>
+    * {
+        text-align: center;
+    }
+    section {
+        margin: 50px;
+    }
+</style>

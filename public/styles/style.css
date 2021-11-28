@@ -12,6 +12,13 @@ nav .logoContainer img{
     width: 100%;
 }
 
+.container_email_pass_register {
+    margin: 10px 0px;
+}
+.container_name_surname_register {
+    margin: 10px;
+}
+
 .mainSection {
     width: 100%;
     display: flex;

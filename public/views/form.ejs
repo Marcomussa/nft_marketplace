@@ -4,7 +4,7 @@
     <section>
         <h3>Login:</h3>
         <form action="/redirect" method='POST'>
-            <input type="text" name="emailLogIn" placeholder="Email">
+            <input type="text" name="email" placeholder="Email">
             <input type="password" name="password" placeholder="password">
             <input type="submit">  
         </form>
@@ -25,10 +25,10 @@
             <% validaciones.forEach( (validacion) => { %>
                 <p style="color: red;">
                 <%= validacion.msg %> 
-                </p>
+            </p>
             <% }) %> 
         <% } %> 
-    </div>
+    </div> 
 </body>
 
 <%- include('./partials/footer.ejs')  %> 

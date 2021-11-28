@@ -23,13 +23,17 @@ const upload = multer({
 
 router.get('/', mainController.index)
 
-router.get('/form', userController.form)
+router.get('/login', userController.login)
 
-router.post('/redirect', 
+router.post('/login', userController.processLogIn)
+
+router.get('/register', userController.register)
+
+router.post('/register', 
     upload.single('avatar'), 
     [
         check('name').notEmpty().bail().withMessage('Ingrese un Nombre')
     ],
-    userController.validacionLogIn)
+    userController.processRegister)
 
 module.exports = router
