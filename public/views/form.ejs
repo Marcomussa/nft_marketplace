@@ -1,0 +1,43 @@
+<%- include('./partials/head.ejs')  %> 
+
+<body>
+    <section>
+        <h3>Login:</h3>
+        <form action="/redirect" method='POST'>
+            <input type="text" name="emailLogIn" placeholder="Email">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit">  
+        </form>
+    </section>
+    <section>
+        <h3>Create User:</h3>
+        <form action="/redirect" method='POST' enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" name="surname" placeholder="Apellido">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="file" name="avatar">
+            <input type="submit">  
+        </form>
+    </section>
+    <div>
+        <% if(typeof validaciones != 'undefined'){ %>
+            <% validaciones.forEach( (validacion) => { %>
+                <p style="color: red;">
+                <%= validacion.msg %> 
+                </p>
+            <% }) %> 
+        <% } %> 
+    </div>
+</body>
+
+<%- include('./partials/footer.ejs')  %> 
+
+<style>
+    * {
+        text-align: center;
+    }
+    section {
+        margin: 50px;
+    }
+</style>

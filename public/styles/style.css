@@ -1,3 +1,40 @@
-h1 {
-    color: red;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logoContainer {
+    width: 20%;
+}
+
+nav .logoContainer img{
+    width: 100%;
+}
+
+.mainSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainSection .divMainSection_1{
+    width: 40%;
+    align-self: center;
+    text-align: center;
+}   
+
+.mainSection .divMainSection_2{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}   
+
+.mainSection .divMainSection_2 div {
+    width: 40%;
+    margin: 10px 0px;
+}
+.mainSection .divMainSection_2 img {
+    width: 100%;
 }

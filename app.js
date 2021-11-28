@@ -14,6 +14,7 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.use('/', router)
 
+
 //! SET
 app.set('view engine', 'ejs');
 
