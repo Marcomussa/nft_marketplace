@@ -19,6 +19,10 @@ nav .logoContainer img{
     margin: 10px;
 }
 
+.userLoggedContainer img {
+    width: 100px;
+}
+
 .mainSection {
     width: 100%;
     display: flex;

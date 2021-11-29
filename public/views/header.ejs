@@ -1,17 +1,31 @@
 <%- include('./partials/head.ejs') %> 
 <body>
-    <nav class="container">
-        <div class="logoContainer">
-            <img src="../img/logo.jpeg" alt="">
-        </div>
-        <div>
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
-            <a href="/profile">Profile</a>
-        </div>
-
-    </nav>
-    
+    <% if(locals.isLogged){ %>
+        <nav class="container">
+            <div class="logoContainer">
+                <img src="../img/logo.jpeg" alt="">
+            </div>
+            <div class="userLoggedContainer">
+                <% if(userLogged.avatar.filename !== undefined){ %>
+                    <img src="../img/avatars/<%= userLogged.avatar.filename %>" alt="">
+                <% } else {%>
+                    <img src="../img/avatars/default.jpeg" alt="">
+                <% } %>    
+                <h3>Hi <u><%= userLogged.name %></u> </h3>
+                <a href="/profile">Profile</a>
+            </div>
+        </nav> 
+    <% } else {%>
+        <nav class="container">
+            <div class="logoContainer">
+                <img src="../img/logo.jpeg" alt="">
+            </div>
+            <div>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </nav> 
+    <% } %>    
 </body>
 </html>
 

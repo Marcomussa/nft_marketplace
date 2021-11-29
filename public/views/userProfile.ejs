@@ -1,8 +1,14 @@
 <%- include('./partials/head.ejs') %> 
 
+<%- include('./header.ejs') %> 
+
 <body>
     <h3>Bienvenido <u><%= userLogged.name %></u> </h3>
-    <img src="../img/avatars/<%= userLogged.avatar.filename %> " alt="">
+    <% if(userLogged.avatar.filename !== undefined){ %>
+        <img src="../img/avatars/<%= userLogged.avatar.filename %> " alt="">
+    <% } else   { %>
+        <img src="../img/avatars/default.jpeg" alt="">
+    <% } %> 
     <h3>Email: <%= userLogged.email  %> </h3>
     <a href="/logout">Log out</a>
     <a href="/">Menu</a>

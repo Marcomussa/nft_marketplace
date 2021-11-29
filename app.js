@@ -4,6 +4,7 @@ const PORT = 4000
 const router = require('./src/routes/routes')
 const path = require('path')
 const session = require('express-session')
+const isLoggedMiddleware = require('./src/middleware/userLoggedMiddleware')
 
 //! USE
 app.use(express.urlencoded({ 
@@ -19,6 +20,8 @@ app.use(session({
 app.use(express.json())
 
 app.use(express.static(path.resolve(__dirname, 'public')))
+
+app.use(isLoggedMiddleware)
 
 app.use('/', router)
 
