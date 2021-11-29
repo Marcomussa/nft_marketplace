@@ -22,7 +22,10 @@ router.post('/login', userController.processLogIn)
 router.post('/register', 
     multer.single('avatar'), 
     [
-        check('name').notEmpty().bail().withMessage('Ingrese un Nombre')
+        check('name').notEmpty().bail().withMessage('Ingrese un Nombre'),
+        check('surname').notEmpty().bail().withMessage('Ingrese un Apellido'),
+        check('email').notEmpty().bail().withMessage('Ingrese un Email').bail().isEmail().withMessage('Formato Email Invalido'),
+        check('password').notEmpty().bail().withMessage('Ingrese un Pass Valido')
     ],
 userController.processRegister)
 

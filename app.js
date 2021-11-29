@@ -5,6 +5,7 @@ const router = require('./src/routes/routes')
 const path = require('path')
 const session = require('express-session')
 const isLoggedMiddleware = require('./src/middleware/userLoggedMiddleware')
+const cookie = require('cookie-parser')
 
 //! USE
 app.use(express.urlencoded({ 
@@ -22,6 +23,8 @@ app.use(express.json())
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.use(isLoggedMiddleware)
+
+app.use(cookie())
 
 app.use('/', router)
 

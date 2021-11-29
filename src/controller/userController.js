@@ -58,9 +58,17 @@ module.exports = {
         
         if(userToLogin){
             let isPassOk = bcrypt.compareSync(req.body.password, userToLogin.password)
+
             if(isPassOk){
                 delete userToLogin.password
                 req.session.userLogged = userToLogin
+
+                if(req.body.recordarUser) {
+                    res.cookie('userEmail', req.body.email, {
+                        maxAge: (1000 * 60) * 2
+                    })
+                } 
+
                 return res.redirect('profile')
             }
             return res.render('login', {
@@ -81,11 +89,13 @@ module.exports = {
         })
     },
     userProfile: function(req, res){
+        console.log(req.cookies.userEmail)
         res.render('userProfile', {
             userLogged: req.session.userLogged
         })
     },
     logout: function(req,res){
+        res.clearCookie('userEmail');
         req.session.destroy()
         res.redirect('/')
     }
