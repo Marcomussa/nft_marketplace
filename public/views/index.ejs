@@ -3,7 +3,16 @@
 
     <%- include('./header.ejs') %> 
 
+    <div class="container">
+        <div class="row text-center">
+            <% if(userLogged){ %>
+                <u><h3>Welcome <%= userLogged.name %> </h3></u>
+            <% } %>     
+        </div>
+    </div>
+
     <section class="mainSection container">
+        
         <div class="divMainSection_1">
             <h1>NFT Marketplace</h1>
         </div>

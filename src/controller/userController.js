@@ -81,14 +81,12 @@ module.exports = {
         })
     },
     userProfile: function(req, res){
-        console.log(req.session.userLogged)
         res.render('userProfile', {
             userLogged: req.session.userLogged
         })
     },
     logout: function(req,res){
         req.session.destroy()
-        console.log(req.session)
         res.redirect('/')
     }
 }

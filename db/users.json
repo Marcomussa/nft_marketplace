@@ -15,5 +15,39 @@
    "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638149794096.png",
    "size": 127887
   }
+ },
+ {
+  "id": 2,
+  "name": "aasas",
+  "surname": "sasas",
+  "email": "asasas",
+  "password": "$2a$10$.cchx5I3fBPImh.6wtEbTuBxz.THxp8bdTa0ypPo.ycDQCNn3rWV6",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "unnamed.png",
+   "encoding": "7bit",
+   "mimetype": "image/png",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638193750298.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638193750298.png",
+   "size": 127887
+  }
+ },
+ {
+  "id": 3,
+  "name": "cuca",
+  "surname": "cuca",
+  "email": "cuca",
+  "password": "$2a$10$JT37s4WOIq.LPT9PnGP7eOVT3mlBGfQC6xnHgjfer31mPUaFY5Sju",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "unnamed.png",
+   "encoding": "7bit",
+   "mimetype": "image/png",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638193761383.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638193761383.png",
+   "size": 127887
+  }
  }
 ]
