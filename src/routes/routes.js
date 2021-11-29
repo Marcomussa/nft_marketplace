@@ -4,6 +4,8 @@ const path = require('path')
 const {check} = require('express-validator')
 const mainController = require('../controller/mainController')
 const userController = require('../controller/userController')
+const guestMiddleware = require('../middleware/guestMiddleware')
+const authMiddleware = require('../middleware/authMiddleware')
 const router = express.Router()
 
 //! Multer:
@@ -23,17 +25,21 @@ const upload = multer({
 
 router.get('/', mainController.index)
 
-router.get('/login', userController.login)
+router.get('/register', guestMiddleware, userController.register)
+
+router.get('/login', guestMiddleware, userController.login)
+
+router.get('/profile', authMiddleware, userController.userProfile)
+
+router.get('/logout', userController.logout)
 
 router.post('/login', userController.processLogIn)
-
-router.get('/register', userController.register)
 
 router.post('/register', 
     upload.single('avatar'), 
     [
         check('name').notEmpty().bail().withMessage('Ingrese un Nombre')
     ],
-    userController.processRegister)
+userController.processRegister)
 
 module.exports = router

@@ -3,86 +3,132 @@
   "id": 1,
   "name": "a",
   "surname": "",
-  "email": "aadadada",
-  "password": "$2a$10$qX5fqQaHTHq0nfHTWPE8cu.69NgV/tEIsgQcw5naB925y/fh2kyFi",
+  "email": "a",
+  "password": "$2a$10$CqdrqZAU06Pw6k7ExGsVn.ofj3vHB6o2P2rbPtDqOX4xZzS7mlmda",
   "avatar": "null"
  },
  {
   "id": 2,
+  "name": "n",
+  "surname": "",
+  "email": "m",
+  "password": "$2a$10$iBx/1DJC5KEVAndZjEz27ubDO6Ag/GZsdQDYyG6gGY.ABeQeA6h62",
+  "avatar": "null"
+ },
+ {
+  "id": 3,
   "name": "Marco",
   "surname": "Mussa",
   "email": "marcomussa567@gmail.com",
-  "password": "$2a$10$U1AVXG/Ct.QumSxfs4T.1O7iei3PSnsLClFUrY51dTDzi6d7KOory",
+  "password": "$2a$10$a/1da9JqARBm0SOdHI5EY.INKgm239fuOKRJy3/wvs7vTLgDM5TNi",
   "avatar": {
    "fieldname": "avatar",
    "originalname": "unnamed.png",
    "encoding": "7bit",
    "mimetype": "image/png",
    "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
-   "filename": "1638123273546.png",
-   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638123273546.png",
+   "filename": "1638135443670.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638135443670.png",
    "size": 127887
   }
  },
  {
-  "id": 3,
-  "name": [
-   "a",
-   ""
-  ],
-  "surname": [
-   "",
-   ""
-  ],
-  "email": [
-   "",
-   ""
-  ],
-  "pass": "",
-  "password": "$2a$10$rscO7XiZ3Mwy6tly4Rzh1.chzb21E8SEf0IcUqHTNI1sjn4N5zGE.",
-  "avatar": "null"
- },
- {
   "id": 4,
-  "name": [
-   "a",
-   ""
-  ],
-  "surname": [
-   "",
-   ""
-  ],
-  "email": [
-   "",
-   ""
-  ],
-  "pass": "",
-  "password": "$2a$10$NLpPFJ49KeEgGKTWb0URv.OSskH31N3MHquYgzsBa.Bbb/E24qytS",
+  "name": "a",
+  "surname": "",
+  "email": "asasa",
+  "password": "$2a$10$yeEAL6KR9oBSsEKcCQIe2eH3bwr0wr5JI8W/DqJyhhmThsXrqrA7O",
   "avatar": "null"
  },
  {
   "id": 5,
-  "name": "a",
-  "surname": "",
-  "email": "",
-  "password": "$2a$10$WiBdmZKKXFYts.8Lwb24tO0kmmUF0Io0u2NisZSdHHO872N2sC7TO",
+  "name": "Juan",
+  "surname": "Lopez",
+  "email": "dsdqd@gmail.com",
+  "password": "$2a$10$0M.9tMuyrHfLbcQeXIuKh./Z3YD1aaUEPXT0qHduK7zPu0vJsR.f6",
   "avatar": "null"
  },
  {
   "id": 6,
-  "name": "asa",
-  "surname": "asas",
-  "email": "asa",
-  "password": "$2a$10$j2MFJDUb7Ouiy/R/sVqt.eeD2DYmEd4b86QNllhCPtDK5gaHOtUVa",
+  "name": "dsdqd@gmail.com",
+  "surname": "",
+  "email": "v",
+  "password": "$2a$10$EHn.FrHYE4Ranl5rZmRFJOmCa/RpgjKpxq/U36qUM6NP8blKqsieK",
+  "avatar": "null"
+ },
+ {
+  "id": 7,
+  "name": "sa",
+  "surname": "",
+  "email": "sa",
+  "password": "$2a$10$QGTU73uFMHM4Ye/SUq6CsO6FBY/s/wCnPIfDAJjYT4TK5BMEu69Qi",
+  "avatar": "null"
+ },
+ {
+  "id": 8,
+  "name": "Marco",
+  "surname": "Mussa",
+  "email": "sasas@gmail.com",
+  "password": "$2a$10$96LnUj441UOEt0Li96DEO.B./b70NP.wg5BAIgYO8EDk/E5NYI//.",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "unnamed.png",
+   "encoding": "7bit",
+   "mimetype": "image/png",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638144064673.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638144064673.png",
+   "size": 127887
+  }
+ },
+ {
+  "id": 9,
+  "name": "a",
+  "surname": "",
+  "email": "",
+  "password": "$2a$10$iMbU/kuYMt8WCRbwkR1OiOmcfPyEBQ8fkGRCqW4lUuwgoOHA8lrHC",
+  "avatar": "null"
+ },
+ {
+  "id": 10,
+  "name": "root",
+  "surname": "root",
+  "email": "root",
+  "password": "$2a$10$Th5TnaWHbumI8gG3hgSek.Li4rPxMAXnQ0.3yCfzVR8NvpIvnO5ey",
+  "avatar": {
+   "fieldname": "avatar",
+   "originalname": "IMG_5339.HEIC",
+   "encoding": "7bit",
+   "mimetype": "image/heic",
+   "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
+   "filename": "1638144223512.HEIC",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638144223512.HEIC",
+   "size": 3127275
+  }
+ },
+ {
+  "id": 11,
+  "name": "q",
+  "surname": "q",
+  "email": "q",
+  "password": "$2a$10$pEjd58Q8tcNi6DIijcDo7e/1dh4GyKakopG6sHjUrvp57BAEBndJa",
   "avatar": {
    "fieldname": "avatar",
    "originalname": "Captura de Pantalla 2021-11-27 a la(s) 18.37.05.png",
    "encoding": "7bit",
    "mimetype": "image/png",
    "destination": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars",
-   "filename": "1638124065061.png",
-   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638124065061.png",
+   "filename": "1638144274235.png",
+   "path": "/Users/marcomussa/Desktop/nft_marketplace/public/img/avatars/1638144274235.png",
    "size": 53911
   }
+ },
+ {
+  "id": 12,
+  "name": "aa",
+  "surname": "",
+  "email": "aa",
+  "password": "$2a$10$/OEpAx89OM9FqHgtfBkPveYAydx9rVUtmrn8yrBff85txLBacpbJq",
+  "avatar": "null"
  }
 ]

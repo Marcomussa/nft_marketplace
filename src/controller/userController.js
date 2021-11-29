@@ -50,12 +50,45 @@ module.exports = {
             }
             User.create(newUser)
 
-            res.json({
-                newUser
-            })
+            res.redirect('login')
         }
     },
     processLogIn: function(req, res){
-        res.send(req.body)
+        let userToLogin = User.findByField('email', req.body.email)
+        
+        if(userToLogin){
+            let isPassOk = bcrypt.compareSync(req.body.password, userToLogin.password)
+            if(isPassOk){
+                delete userToLogin.password
+                req.session.userLogged = userToLogin
+                return res.redirect('profile')
+            }
+            return res.render('login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son invalidas'
+                    }
+                }
+            })
+        }
+
+        return res.render('login', {
+            errors: {
+                email: {
+                    msg: 'Email no encontrado'
+                }
+            }
+        })
+    },
+    userProfile: function(req, res){
+        console.log(req.session.userLogged)
+        res.render('userProfile', {
+            userLogged: req.session.userLogged
+        })
+    },
+    logout: function(req,res){
+        req.session.destroy()
+        console.log(req.session)
+        res.redirect('/')
     }
 }

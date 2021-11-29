@@ -1,0 +1,10 @@
+<%- include('./partials/head.ejs') %> 
+
+<body>
+    <h3>Bienvenido <u><%= userLogged.name %></u> </h3>
+    <img src="../img/avatars/<%= userLogged.avatar.filename %> " alt="">
+    <h3>Email: <%= userLogged.email  %> </h3>
+    <a href="/logout">Log out</a>
+</body>
+
+<%- include('./partials/footer.ejs') %> 

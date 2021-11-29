@@ -3,17 +3,24 @@ const app = express()
 const PORT = 4000
 const router = require('./src/routes/routes')
 const path = require('path')
+const session = require('express-session')
 
 //! USE
 app.use(express.urlencoded({ 
     extended: false
 }))
+
+app.use(session({
+    secret: 'S4T0',
+    resave: false,
+    saveUninitialized: false
+}))
+
 app.use(express.json())
 
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.use('/', router)
-
 
 //! SET
 app.set('view engine', 'ejs');

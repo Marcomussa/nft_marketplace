@@ -35,7 +35,13 @@
             </p>
             <% }) %> 
         <% } %> 
+        <% if(locals.errors && errors.email){ %>
+            <p>
+                <%= errors.email.msg %> 
+            </p>
+        <% } %> 
     </div> 
+    <a href="/login">Log In</a>
 </body>
 
 <%- include('./partials/footer.ejs')  %> 

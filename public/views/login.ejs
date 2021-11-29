@@ -10,7 +10,7 @@
                   <input type="text" class="form-control" placeholder="Email" aria-label="Nombre" name="email">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="password" aria-label="Apellido" name="surname">
+                  <input type="text" class="form-control" placeholder="password" aria-label="Apellido" name="password">
                 </div>
             </div>
             <input type="submit">  
@@ -18,15 +18,14 @@
     </section>
 
     <div>
-        <% if(typeof validaciones != 'undefined'){ %>
-            <% validaciones.forEach( (validacion) => { %>
-                <p style="color: red;">
-                <%= validacion.msg %> 
+        <% if(locals.errors && errors.email){ %>
+            <p>
+                <%= errors.email.msg %> 
             </p>
-            <% }) %> 
         <% } %> 
     </div> 
 
+    <a href="/register">Register</a>
 </body>
 
 <%- include('./partials/footer.ejs')  %> 
