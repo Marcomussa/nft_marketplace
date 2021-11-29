@@ -18,13 +18,13 @@ app.use(session({
     saveUninitialized: false
 }))
 
+app.use(cookie())
+
 app.use(express.json())
 
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.use(isLoggedMiddleware)
-
-app.use(cookie())
 
 app.use('/', router)
 

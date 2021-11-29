@@ -3,41 +3,35 @@
 <%- include('./header.ejs') %> 
 
 <body>
-
-    <section>
-        <h3>Login:</h3>
-        <form action="/login" method='POST'>
-            <div class="row g-3 container_name_surname_register">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Email" aria-label="Nombre" name="email">
+    <div class="contenedorMadre">
+        <section class="container container_email_password_login">
+            <h3>Login:</h3>
+            <form action="/login" method='POST'>
+                <div class="row g-3 sub_container_email_password_login">
+                    <div class="col sub_container_email_login">
+                      <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="col sub_container_password_login">
+                      <input type="text" class="form-control" placeholder="password" name="password">
+                    </div>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="password" aria-label="Apellido" name="password">
+                <div class="row sub_container_checkbox_login">
+                    <div class="col">
+                        <input type="checkbox" name="recordarUser" id="recordarUser"><label for="recordarUser">Recordar Usuario</label>
+                    </div>
                 </div>
-                <input type="checkbox" name="recordarUser" id="recordarUser"><label for="recordarUser">Recordar Usuario</label>
-            </div>
-            <input type="submit">  
-        </form>
-    </section>
-
-    <div>
-        <% if(locals.errors && errors.email){ %>
-            <p>
-                <%= errors.email.msg %> 
-            </p>
-        <% } %> 
+                <input type="submit">  
+            </form>
+        </section>
+    
+        <div>
+            <% if(locals.errors && errors.email){ %>
+                <p>
+                    <%= errors.email.msg %> 
+                </p>
+            <% } %> 
+        </div>
     </div> 
-
-    <a href="/register">Register</a>
 </body>
 
 <%- include('./partials/footer.ejs')  %> 
-
-<style>
-    * {
-        text-align: center;
-    }
-    section {
-        margin: 50px;
-    }
-</style>

@@ -1,9 +1,14 @@
 <%- include('./partials/head.ejs') %> 
 <body>
+   <div class="contenedorMadre">
     <% if(locals.isLogged){ %>
         <nav class="container">
             <div class="logoContainer">
                 <img src="../img/logo.jpeg" alt="">
+            </div>
+            <div>
+                <a href="">Descubri</a>
+                <a href="">Como funciona</a>
             </div>
             <div class="userLoggedContainer">
                 <% if(userLogged.avatar.filename !== undefined){ %>
@@ -21,11 +26,16 @@
                 <img src="../img/logo.jpeg" alt="">
             </div>
             <div>
+                <a href="">Discover</a>
+                <a href="">How it works</a>
+            </div>
+            <div>
                 <a href="/login">Login</a>
                 <a href="/register">Register</a>
             </div>
         </nav> 
     <% } %>    
+   </div>
 </body>
 </html>
 
