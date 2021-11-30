@@ -3,15 +3,23 @@
 <%- include('./header.ejs') %> 
 
 <body>
-    <h3>Bienvenido <u><%= userLogged.name %></u> </h3>
-    <% if(userLogged.avatar.filename !== undefined){ %>
-        <img src="../img/avatars/<%= userLogged.avatar.filename %> " alt="">
-    <% } else   { %>
-        <img src="../img/avatars/default.jpeg" alt="">
-    <% } %> 
-    <h3>Email: <%= userLogged.email  %> </h3>
-    <a href="/logout">Log out</a>
-    <a href="/">Menu</a>
+    <div class="container">
+        <div class="container container_user_profile">
+            <div class="card mb-3 col-md-3">
+                <% if(userLogged.avatar.filename !== undefined){ %>
+                    <img src="../img/avatars/<%= userLogged.avatar.filename %> " alt="">
+                <% } else  { %>
+                    <img src="../img/avatars/default.png" alt="">
+                <% } %> 
+                <div class="card-body">
+                  <h5 class="card-title"><%= userLogged.name  %></h5>
+                  <p class="card-text">
+                    <%= userLogged.email  %>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
 </body>
 
 <%- include('./partials/footer.ejs') %> 

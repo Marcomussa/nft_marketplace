@@ -4,30 +4,30 @@
     <% if(locals.isLogged){ %>
         <nav class="container">
             <div class="logoContainer">
-                <img src="../img/logo.jpeg" alt="">
+                <a href="/">Logo</a>
             </div>
-            <div>
-                <a href="">Descubri</a>
-                <a href="">Como funciona</a>
+            <div class="nav_subcontainer_1">
+                <a href="">Discover</a>
+                <a href="">How it Works</a>
             </div>
             <div class="userLoggedContainer">
                 <% if(userLogged.avatar.filename !== undefined){ %>
                     <img src="../img/avatars/<%= userLogged.avatar.filename %>" alt="">
                 <% } else {%>
-                    <img src="../img/avatars/default.jpeg" alt="">
+                    <img src="../img/avatars/default.png" alt="">
                 <% } %>    
-                <h3>Hi <u><%= userLogged.name %></u> </h3>
-                <a href="/profile">Profile</a>
+                <a href="/profile"><%= userLogged.name %></u></a>
+                <a href="/logout">Log out</a>
             </div>
         </nav> 
     <% } else {%>
         <nav class="container">
             <div class="logoContainer">
-                <img src="../img/logo.jpeg" alt="">
+                <a href="/">Logo</a>
             </div>
-            <div>
-                <a href="">Discover</a>
-                <a href="">How it works</a>
+            <div class="nav_subcontainer_1">
+                <a href="/">Discover</a>
+                <a href="/">How it works</a>
             </div>
             <div>
                 <a href="/login">Login</a>
