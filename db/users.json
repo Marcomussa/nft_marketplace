@@ -1,1 +1,10 @@
-[]
+[
+ {
+  "id": 1,
+  "name": "root",
+  "surname": "root",
+  "email": "root@root.com",
+  "password": "$2a$10$NRHYhz1.FpovdZfc6mefAOHZyH9TV/fnwUMpGPH5oSHZYXN59ySZ2",
+  "avatar": "null"
+ }
+]

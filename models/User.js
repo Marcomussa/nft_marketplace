@@ -1,6 +1,5 @@
 const fs = require("fs")
 const path = require('path')
-const bcrypt = require('bcryptjs')
 
 const User = {
     filename: './users.json',

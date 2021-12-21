@@ -10,7 +10,7 @@
                 <div class="row g-3 sub_container_email_password_login">
                     <div class="col sub_container_email_login">
                       <input type="text" class="form-control" placeholder="Email" name="email">
-                      <% if(locals.errors && errors.email){ %>
+                    <% if(locals.errors && errors.email){ %>
                         <span>
                             <%= errors.email.msg %> 
                         </span>
